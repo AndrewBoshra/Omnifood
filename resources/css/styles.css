@@ -1,0 +1,311 @@
+/******************************
+        **BASIC SETUP
+*******************************/
+:root {
+    --primary: #e67e22;
+    --primary-var: #c76917;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(#000b, #000b), url('img/hero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/******************************
+    **REUSABLE COMPONENTS
+*******************************/
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    margin: 30px auto;
+    background-color: var(--primary);
+    content: " ";
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/******************************
+**        PARAGRAPHS
+*******************************/
+.long-copy {
+    line-height: 140%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 140%;
+}
+
+/******************************
+**           ICONS
+******************************/
+.icon-big {
+    font-size: 350%;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 10px;
+}
+
+/******************************
+**            Buttons
+*******************************/
+.btn:link,
+.btn:visited {
+    /* unvisited*/
+    /* display: inline-block; */
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 10px 30px;
+    font-weight: 300;
+    border-radius: 200px;
+    color: white;
+    border: 2px solid var(--primary);
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: var(--primary);
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: var(--primary);
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+    border: 2px solid var(--primary-var);
+    background-color: var(--primary-var);
+}
+
+/******************************
+    ** Nav bar
+*******************************/
+.logo {
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 54px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 8px;
+    transition: border-bottom 0.2s;
+}
+
+/****************************/
+/*      SECTIONS            */
+/****************************/
+
+
+/****************************/
+/*      features            */
+/****************************/
+.section-features .long-copy {
+    margin-bottom: 10px;
+}
+
+/****************************/
+/*      Meals            */
+/****************************/
+
+.section-meals {
+    padding: 0;
+
+}
+
+ 
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+    display: flex;
+}
+
+.meals-showcase li {
+    width: 25%;
+} 
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photo img {
+    width: 100%;
+    transform: scale(1.15);
+    opacity: .7;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+    transition: transform .5s, opacity .5s;
+}
+
+/****************************/
+/*      Steps            */
+/****************************/
+.section-steps{
+    background-color: #f5f5f5;
+}
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    font-size: 5%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left:3% ;
+    text-align: left;
+    margin-top: 70px;
+}
+.app-screen{
+    width: 40%;
+} 
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+.works-step div {
+    color:var(--primary);
+    border-radius: 50px;
+    border: 2px solid var(--primary);
+    text-align: center;
+    font-size: 150%;
+    width: 55px;
+    height: 55px;
+    float: left;
+    padding: 7px;
+    margin-right: 25px;
+}
+.btn-app img{
+    height: 50px;
+    margin-right: 10px;
+}
+.city-box{
+    padding-right: 5px;
+
+}
+.city-img{
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: black;
+}
+.city-img:hover{
+    opacity: 1;
+
+}
+.icon-small{
+    margin-right: 10px;
+    color: var(--primary);
+}
+.city-box a{
+    color: var(--primary);
+}
