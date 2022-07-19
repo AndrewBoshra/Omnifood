@@ -145,6 +145,21 @@ a:hover {
     margin-top: -7px;
     
 }
+.ion-social-twitter:hover {
+    color: rgb(0, 172, 237);
+}
+
+.ion-social-facebook:hover {
+    color: rgb(53, 121, 255);
+}
+
+.ion-social-googleplus:hover {
+    color: rgb(255, 98, 98);
+}
+
+.ion-social-instagram:hover {
+    color: rgb(255, 84, 175);
+}
 /******************************
 **            Buttons
 *******************************/
@@ -338,9 +353,6 @@ input[type=submit]:active{
 }
 
 
-.ion-social-twitter:hover{
-    color: rgb(0, 172, 237);
-}
 
 .city-feature{
     margin-bottom: 10px;
@@ -449,9 +461,7 @@ textarea {
     color: var(--text-color);
 }
 
-input:focus,
-select:focus,
-textarea:focus{
+*:focus{
     outline: none;
 }
 
@@ -463,3 +473,56 @@ textarea::placeholder{
 input[type=checkbox]{
     margin: 10px 5px 10px 0 ;
 }
+/********************************/
+/**           Footer            */
+/********************************/
+
+footer{
+    background-color: #333;
+    color:#888;
+    font-size: 80%;
+    padding: 30px 0;
+    line-height: 140%;
+}
+.footer-nav{
+    list-style: none;
+}
+.footer-nav ,
+p{
+    margin: 20px 0;
+}
+
+.links {
+    float: left;
+}
+.links li{
+    margin-right: 20px;
+}
+
+.social-links {
+    float: right;
+}
+.social-links li{
+    margin-right: 10px;
+    font-size: 150%;
+}
+
+.social-links li:last-child {
+    margin-right: 0px;
+}
+.footer-nav li{
+    display: inline;
+}
+
+
+footer a:link,
+footer a:visited{
+    color:#888;
+    border: none;
+}
+footer a:hover,
+footer a:active{
+    color:#ccc;
+    border: none;
+}
+
