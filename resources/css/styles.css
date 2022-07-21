@@ -146,6 +146,18 @@ a:hover {
     margin-top: -7px;
     
 }
+.icon-btn:link,
+.icon-btn:visited {
+    border: none;
+    color: #fff;
+    font-size: 200%;
+}
+
+.icon-btn:hover,
+.icon-btn:active {
+    color: rgb(212, 212, 212);
+}
+
 .ion-social-twitter:hover {
     color: rgb(0, 172, 237);
 }
@@ -209,16 +221,25 @@ input[type=submit]:active{
 /******************************
     ** Nav bar
 *******************************/
-.logo {
+.nav-menu-icon{
+    display: none;
+}
+
+.logo,
+.logo-black {
     height: 100px;
     float: left;
     margin-top: 20px;
 }
 
-.main-nav {
+.main-nav, .nav-menu-icon {
     float: right;
     list-style: none;
     margin-top: 54px;
+}
+
+.nav-sticky .nav-menu-icon{
+    color: var(--text-color);
 }
 
 .main-nav li {
@@ -240,6 +261,45 @@ input[type=submit]:active{
     border-bottom: 2px solid var(--primary);
     padding-bottom: 8px;
     transition: border-bottom 0.2s;
+}
+.nav-sticky {
+    background-color: rgba(255, 255, 255, 0.956);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 2px rgb(245, 245, 245);
+}
+
+nav .logo-black {
+    display: none;
+}
+
+.nav-sticky .logo-black {
+    display: block;
+}
+
+.nav-sticky .logo {
+    display: none;
+}
+
+.nav-sticky .main-nav li a:hover,
+.nav-sticky .main-nav li a:active {
+    padding-bottom: 20px;
+}
+
+.nav-sticky .main-nav li a:link,
+.nav-sticky .main-nav li a:visited {
+    color: var(--text-color);
+    font-weight: 300;
+}
+.logo-black{
+    height: 50px;
+    margin: 5px 0;
+}
+.nav-sticky .main-nav ,.nav-sticky .nav-menu-icon {
+    margin-top: 20px;
 }
 
 /****************************/
@@ -523,5 +583,14 @@ footer a:hover,
 footer a:active{
     color:#ccc;
     border: none;
+}
+
+
+
+/*******************/
+/**  Animation     */
+/*******************/
+.js--animate-in{
+    opacity: 0;
 }
 

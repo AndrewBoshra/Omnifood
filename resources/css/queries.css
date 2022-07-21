@@ -38,7 +38,24 @@
         margin: 0;
         margin-bottom:20px;
     }
-    .main-nav { display: none; }
+    .main-nav {
+        display: none;
+        float: left;
+        margin: 20px 0 0 20px;
+        animation-duration: .2s;
+    }
+
+    .main-nav li { margin-bottom: 10px; display: block;}
+    .main-nav li a:hover,
+    .main-nav li a:active
+    {border: none;}
+
+    .nav-menu-icon { display: inline; }
+    .nav-sticky .nav-menu-icon {
+        font-size: 180%;
+        margin-top: 15px ;
+    }
+    
     .long-copy { width: 100%; }
     .steps-box:first-child { text-align: center; }
     .steps-box:last-child { text-align: left; }
