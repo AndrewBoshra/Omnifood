@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="vendors/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="vendors/css/grid.css" type="text/css">
-    <link rel="stylesheet" href="vendors/css/ionicons.min.css" type="text/css">
-    <link rel="stylesheet" href="vendors/css/animate.css" type="text/css">
-    <link rel="stylesheet" href="resources/css/styles.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <head>
+        <link rel="stylesheet" href="vendors/css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="vendors/css/grid.css" type="text/css">
+        <link rel="stylesheet" href="vendors/css/ionicons.min.css" type="text/css">
+        <link rel="stylesheet" href="vendors/css/animate.css" type="text/css">
+        <link rel="stylesheet" href="resources/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="resources/css/queries.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
 
-    <link rel="icon" href="resources/img/logo-white.png">
+        <link rel="icon" href="resources/img/logo-white.png">
 
     <title>Omnifood</title>
 </head>
@@ -29,7 +32,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="hero-text-box">
+        <div class="row hero-text-box">
             <h1>Goodbye junk food.<br> Hello super healthy meals.</h1>
             <a href="#" class="btn btn-full">I’m hungry</a>
             <a href="#" class="btn btn-ghost">Show me more</a>
@@ -308,7 +311,7 @@
             </div>
             <div class="row">
                 <form action="#" method="post" class="contact-form">
-                    <div>
+                    <div class="row">
                         <div class="col span-1-of-3">
                             <label for="name">Name</label>
                         </div>
@@ -316,7 +319,7 @@
                             <input type="text" name="name" id="name" placeholder="Your Name" required>
                         </div>
                     </div>
-                    <div>
+                    <div class="row">
                         <div class="col span-1-of-3">
                             <label for="email">Email</label>
                         </div>
@@ -324,7 +327,7 @@
                             <input type="email" name="email" id="email" placeholder="Your Email" required>
                         </div>
                     </div>
-                    <div>
+                    <div class="row">
                         <div class="col span-1-of-3">
                             <label for="find-us">How did you find us?</label>
                         </div>
@@ -337,7 +340,7 @@
                             </select>
                         </div>
                     </div>
-                    <div>
+                    <div class="row">
                         <div class="col span-1-of-3">
                             <label for="newsletter">Newsletter?</label>
                         </div>
@@ -346,7 +349,7 @@
                             Yes, please
                         </div>
                     </div>
-                    <div>
+                    <div class="row">
                         <div class="col span-1-of-3">
                             <label for="line">Drop us a line</label>
                         </div>
@@ -354,7 +357,12 @@
                             <textarea name="line" id="line" placeholder="Your Message"></textarea>
                         </div>
                     </div>
-                    <input type="submit" value="Send it!">
+                    <div class="row">
+                        <div class="col span-1-of-3">&nbsp;</div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>

@@ -21,6 +21,7 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 header {
@@ -35,7 +36,6 @@ header {
 
 .hero-text-box {
     position: absolute;
-    width: 1140px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -269,9 +269,6 @@ input[type=submit]:active{
     display: flex;
 }
 
-.meals-showcase li {
-    width: 25%;
-} 
 
 .meal-photo {
     width: 100%;

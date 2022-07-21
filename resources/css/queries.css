@@ -1,0 +1,72 @@
+@media only screen and (max-width:1200px){
+    .row{
+        width: 96%;
+        margin:0 auto ;
+    }
+}
+
+@media only screen and (max-width:1023px){
+    html { font-size: 18px; }
+    section { padding: 60px 0; }
+    .long-copy { width: 80%; }
+    .box { padding: 0%; }
+    .works-step { 
+        min-height: 70px;
+        margin-bottom: 30px;
+    }
+    .steps-box:last-child { margin-top: 30px; }
+    .steps-box:first-child { margin-top: 20px;}
+    .app-screen { width: 50%; }
+    .icon-small { 
+        margin-right: 5px;
+        width: 20px;
+    }
+    .city-feature { font-size: 98%; }
+    .plan-box { width: 100%; }
+    .plan-price { font-size: 270%; }
+    .contact-form { width: 80%; }
+}
+
+@media only screen and (max-width:767px){
+    html { font-size: 16px; }
+    section { padding: 3 0px 0; }
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    .row { width: 92%; }
+    .col { 
+        width: 100%; 
+        margin: 0;
+        margin-bottom:20px;
+    }
+    .main-nav { display: none; }
+    .long-copy { width: 100%; }
+    .steps-box:first-child { text-align: center; }
+    .steps-box:last-child { text-align: left; }
+    .app-screen { width: 40%; }
+    .works-step { 
+        margin-bottom: 10px;
+        min-height: 40px;
+    }
+    .works-step:last-of-type { margin-bottom: 30px;}
+    .works-step div {
+        width: 40px;
+        height: 40px;
+        font-size: 120%;
+        margin-right: 15px;
+    }
+    .contact-form { width: 100%; }
+    
+} 
+
+@media only screen and (max-width:480px){
+    html { font-size: 15px;}
+    h1 { font-size: 150%; }
+    h2 { font-size: 120%; }
+    .btn-app img {
+        height: 40px;
+        margin-right: 10px;
+    }
+    .social-links {
+        float: left;
+    }
+} 
