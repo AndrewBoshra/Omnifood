@@ -89,9 +89,10 @@ section {
 }
 
 .row {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
+
 .box {
     padding: 1%;
 }
@@ -268,6 +269,7 @@ input[type=submit]:active{
     width: 100%;
     display: flex;
 }
+
 
 
 .meal-photo {
